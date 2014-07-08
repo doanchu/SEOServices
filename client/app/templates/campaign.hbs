@@ -1,0 +1,311 @@
+		<div class="header navbar navbar-inverse "> 
+			<!-- BEGIN TOP NAVIGATION BAR -->
+			<div class="navbar-inner">
+				<div class="header-seperation"> 
+					<ul class="nav pull-left notifcation-center" id="main-menu-toggle-wrapper" style="display:none">    
+						<li class="dropdown"> <a id="main-menu-toggle" href="#main-menu"  class="" > <div class="iconset top-menu-toggle-white"></div> </a> </li>        
+					</ul>
+					<!-- BEGIN LOGO --> 
+					<a href="index.html"><img src="assets/img/logo.png" class="logo" alt=""  data-src="assets/img/logo.png" data-src-retina="assets/img/logo2x.png" width="106" height="21"/></a>
+					<!-- END LOGO --> 
+					<ul class="nav pull-right notifcation-center">  
+						<li class="dropdown" id="header_task_bar"> <a href="index.html" class="dropdown-toggle active" data-toggle=""> <div class="iconset top-home"></div> </a> </li>
+						<li class="dropdown" id="header_inbox_bar" > <a href="email.html" class="dropdown-toggle" > <div class="iconset top-messages"></div>  <span class="badge" id="msgs-badge">2</span> </a></li>
+						<li class="dropdown" id="portrait-chat-toggler" style="display:none"> <a href="#sidr" class="chat-menu-toggle"> <div class="iconset top-chat-white "></div> </a> </li>        
+					</ul>
+				</div>
+				<!-- END RESPONSIVE MENU TOGGLER --> 
+				<div class="header-quick-nav" > 
+					<!-- BEGIN TOP NAVIGATION MENU -->
+					<div class="pull-left"> 
+						<ul class="nav quick-section">
+							<li class="quicklinks"> <a href="#" class="" id="layout-condensed-toggle" >
+									<div class="iconset top-menu-toggle-dark"></div>
+								</a> </li>
+						</ul>
+						<ul class="nav quick-section">
+							<li class="quicklinks"> <a href="#" class="" >
+									<div class="iconset top-reload"></div>
+								</a> </li>
+							<li class="quicklinks"> <span class="h-seperate"></span></li>
+							<li class="quicklinks"> <a href="#" class="" >
+									<div class="iconset top-tiles"></div>
+								</a> </li>
+							<li class="m-r-10 input-prepend inside search-form no-boarder">
+								<span class="add-on"> <span class="iconset top-search"></span></span>
+								<input name="" type="text"  class="no-boarder " placeholder="Search Dashboard" style="width:250px;">
+							</li>
+						</ul>
+					</div>
+					<!-- END TOP NAVIGATION MENU -->
+					<!-- BEGIN CHAT TOGGLER -->
+					<!-- END CHAT TOGGLER -->
+				</div> 
+				<!-- END TOP NAVIGATION MENU --> 
+
+			</div>
+			<!-- END TOP NAVIGATION BAR --> 
+		</div>
+
+		<!-- END HEADER --> 
+		<!-- BEGIN CONTAINER -->
+		<div class="page-container row"> 
+			<!-- BEGIN SIDEBAR -->
+			<div class="page-sidebar" id="main-menu">
+				<!-- BEGIN MINI-PROFILE -->
+				<div class="page-sidebar-wrapper" id="main-menu-wrapper">
+					<div class="user-info-wrapper">
+						<div class="profile-wrapper"> <img src="assets/img/profiles/avatar.jpg"  alt="" data-src="assets/img/profiles/avatar.jpg" data-src-retina="assets/img/profiles/avatar2x.jpg" width="69" height="69" /> </div>
+						<div class="user-info">
+							<div class="greeting">Welcome</div>
+							<div class="username">John <span class="semi-bold">Smith</span></div>
+							<div class="status">Status<a href="#">
+									<div class="status-icon green"></div>
+									Online</a></div>
+						</div>
+					</div>
+					<!-- END MINI-PROFILE -->
+					<!-- BEGIN SIDEBAR MENU -->
+					<p class="menu-title">BROWSE <span class="pull-right"><a href="javascript:;"><i class="fa fa-refresh"></i></a></span></p>
+					<ul>
+						<li class="start"> <a href="main.html"> <i class="icon-custom-home"></i> <span class="title">Campaigns</span> <span class="selected"></span> </a> </li>
+						<li class=""> <a href="Option.html"> <i class="fa fa-envelope"></i> <span class="title">Option</span> </a> </li>        
+					</ul>
+					<div class="clearfix"></div>
+					<!-- END SIDEBAR MENU -->
+				</div>
+			</div>
+			<a href="#" class="scrollup">Scroll</a>
+			<!-- END SIDEBAR --> 
+			<!-- BEGIN PAGE CONTAINER-->
+			<div class="page-content">
+				<!-- BEGIN SAMPLE PORTLET CONFIGURATION MODAL FORM-->
+				<div id="portlet-config" class="modal hide">
+					<div class="modal-header">
+						<button data-dismiss="modal" class="close" type="button"></button>
+						<h3>Widget Settings</h3>
+
+					</div>
+					<div class="modal-body">Widget settings form goes here</div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="content">
+					<ul class="breadcrumb">
+						<li>
+							<p>YOU ARE HERE</p>
+						</li> 
+						<li>{{#link-to 'campaign' class="active"}}{{this.name}}{{/link-to}}</a>
+						</li>
+					</ul>   
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="grid simple ">
+								<div class="grid-title">
+									<h4>Campaign Info</h4>
+									<div class="tools">
+										<a href="javascript:;" class="collapse"></a>
+										<a href="#grid-config" data-toggle="modal" class="config"></a>
+										<a href="javascript:;" class="reload"></a>
+										<a href="javascript:;" class="remove"></a>
+									</div>
+								</div>
+								<div class="grid-body">
+									<form id="form_traditional_validation" action="#">                           
+										<div class="form-group">
+											<label class="form-label">Campaign Name</label>                                 
+											<div class="input-with-icon  right">                                       
+												<i class=""></i>
+												{{input type="text" class="form-control" value=name }}
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="form-label">Description</label>                                   
+											<div class="input-with-icon  right">                                       
+												<i class=""></i>
+												{{input type="text" class="form-control" value=description }}
+											</div>
+										</div>
+										<div class="form-actions">  
+											<div class="pull-right">
+												<button type="submit" class="btn btn-success btn-cons"><i class="icon-ok"></i> Save</button>
+
+											</div>
+										</div>
+									</form>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="grid simple ">
+								
+								<div class="grid-body">
+									<ul class="nav nav-tabs" id="tab-01">
+										<li><a href="#projects">Projects</a></li>
+										<li><a href="#accountprofiles">Accounts</a></li>
+										<li class="active"><a href="#urllist">URLs</a></li>
+									</ul>
+									<div class="tools"> <a href="javascript:;" class="collapse"></a> <a href="#grid-config" data-toggle="modal" class="config"></a> <a href="javascript:;" class="reload"></a> <a href="javascript:;" class="remove"></a> </div>
+									<div class="tab-content">
+										<div class="tab-pane" id="projects">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="grid simple ">
+
+														<div class="grid-body no-border">                                  
+															<button type="button" class="btn btn-default btn-cons">Add New</button>
+															<button type="button" class="btn btn-default btn-cons">Delete</button>
+															<table class="table no-more-tables">
+																<thead>
+																	<tr>
+																		<th style="width:1%" >
+																<div class="checkbox check-default">
+																	<input id="checkbox10" type="checkbox" value="1" class="checkall">
+																	<label for="checkbox10"></label>
+																</div>
+																</th>
+																<th style="width:22%">Name</th>
+																<th style="width:9%">Module</th>
+																<th style="width:6%">Last Modified</th>
+																<th style="width:10%">Status</th>
+																<th style="width:10%">Schedule</th>
+																<th style="width:10%">Edit</th>
+
+																</tr>
+																</thead>
+																<tbody>
+																{{#each project in projects}}
+																	<tr>
+																		<td class="v-align-middle">
+																			<div class="checkbox check-default">
+																				{{input type="checkbox" id=project.index }}
+																				<label for={{project.index}}></label>
+																			</div>
+																		</td>
+																		<td class="v-align-left"><span class="muted">{{#link-to  'project' project}}{{project.name}}{{/link-to}}</span></td>
+																		<td class="v-align-left">{{project.module}}
+																		</td>
+																		<td class="v-align-middle"><span class="muted">{{project.lastModifiedDate}}</span>
+																		</td>
+																		<td class="v-align-left">
+																			<span class="muted">{{project.status}}</span>
+																		</td>
+																		<td class="v-align-left">
+																			<span class="muted">{{project.schedule}}</span>
+																		</td>
+																		<td class="v-align-middle">
+																			<span class="muted">{{#link-to  'project' project}}Edit{{/link-to}}</span>
+																		</td>
+
+																	</tr>
+																{{/each}}
+																	
+
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane" id="accountprofiles">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="grid simple ">
+
+														<div class="grid-body no-border">                                  
+															<button type="button" class="btn btn-default btn-cons">Add New</button>
+															<button type="button" class="btn btn-default btn-cons">Delete</button>
+															<table class="table no-more-tables">
+																<thead>
+																	<tr>
+																		<th style="width:1%" >
+																<div class="checkbox check-default">
+																	<input id="checkbox20" type="checkbox" value="1" class="checkall">
+																	<label for="checkbox20"></label>
+																</div>
+																</th>
+																<th style="width:9%">Name</th>
+																<th style="width:22%">Counts</th>                                                                   
+
+																</tr>
+																</thead>
+																<tbody>
+																{{#each profile in accountprofiles}}
+																	<tr>
+																		<td class="v-align-middle">
+																			<div class="checkbox check-default">
+																				{{input type="checkbox" value=profile.index}}
+																				<label></label>
+																			</div>
+																		</td>
+																		<td class="v-align-left"><span class="muted">{{#link-to 'accountprofile' profile}}{{profile.name}}{{/link-to}}</span></td>
+																		<td class="v-align-middle">{{profile.count}}
+																		</td>
+																	</tr>
+																{{/each}}
+																	
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="tab-pane active" id="urllist">
+											<div class="row">
+												<div class="col-md-12">
+													<div class="grid simple ">
+
+														<div class="grid-body no-border">                                  
+															<button type="button" class="btn btn-default btn-cons">Add New</button>
+															<button type="button" class="btn btn-default btn-cons">Delete</button>
+															<table class="table no-more-tables">
+																<thead>
+																	<tr>
+																		<th style="width:1%" >
+																<div class="checkbox check-default">
+																	<input id="checkbox30" type="checkbox" value="1" class="checkall">
+																	<label for="checkbox30"></label>
+																</div>
+																</th>
+																<th style="width:9%">Name</th>
+																<th style="width:22%">Counts</th>                                                                   
+
+																</tr>
+																</thead>
+																<tbody>
+																	{{#each url in urllists}}
+																	<tr>
+																		<td class="v-align-middle">
+																			<div class="checkbox check-default">
+																				{{input type="checkbox" value=url.index}}
+																				<label></label>
+																			</div>
+																		</td>
+																		<td class="v-align-left"><span class="muted">{{#link-to 'urllist' url}}{{url.name}}{{/link-to}}</span></td>
+																		<td class="v-align-middle">{{url.count}}
+																		</td>
+																	</tr>
+																{{/each}}
+																</tbody>
+															</table>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>    
+		</div>
+			<!-- END PAGE -->

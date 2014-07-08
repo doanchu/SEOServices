@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BeatSenukeEmberCli</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/beat-senuke-ember-cli.css">
+<!--<link href="assets/plugins/boostrapv3/css/bootstrap.css" rel="stylesheet" type="text/css">-->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css"/>
+    
+        <link href="assets/plugins/bootstrap-select2/select2.css" rel="stylesheet" type="text/css" />
+
+  </head>
+  <body>
+    <script>
+      window.BeatSenukeEmberCliENV = {{ENV}};
+      window.EmberENV = window.BeatSenukeEmberCliENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/beat-senuke-ember-cli.js"></script>
+    <script>
+      window.BeatSenukeEmberCli = require('beat-senuke-ember-cli/app')['default'].create(BeatSenukeEmberCliENV.APP);
+    </script>
+  </body>
+</html>

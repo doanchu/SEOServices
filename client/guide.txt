@@ -1,0 +1,30 @@
+Thư mục chính là app
+Trong đây nó phân luôn thành controller route model các thứ cho mình
+Sau khi build thì nó sẽ tạo ra thư mục dist, chứa code của mình
+Thư mục vendor là thư mục chuuasc các thư viện như jquery, bootstrap
+
+Brocfile.js chứa cấu hình để mình thêm các fie thư viện vào trong file build cuối cùng
+Tất cả các file js được khai báo trong đây thì sẽ được build vào chung 1 file là vendor.js
+Tất cả các file css được khai báo trong đấy cũng được đưa vào chung 1 file là vendor.css
+Tất cả các file còn lại không phải là css hoặc js sẽ được đưa vào đúng thư mục trong dist. 
+(hieu dong 9 roi)
+
+Css nao ma duoc dua vao trong file app/styles.ss thi se duoc dua vao trong thu muc dist/assets/application-name.css
+
+
+Noi ve thu muc app: Bay gio tat ca cac model controller route minh khong can phai dat ten nua ma no dua vao file name de sinh ra ten
+vi du ProjectIndexController se nam trong file controllers/project/index.js
+ProjectIndexRoute sẽ nằm trong file routes/project/index.js
+tep
+kiểu như thế
+
+(dau?)
+
+
+tớ nhầm. Thế này. Ví dụ từ từ đã. bây giờ cái nào thừa thì xóa đi. cho dễ hiểu.
+Controller có 2 loại hay dùng là ObjectController và ArrayController. ObjectController 
+thì phục vụ cho các qqery kiểu như project/1
+ArrayController thì phục vụ cho các qqery kiểu projects
+ArrayController thì có thuộc tính model là mảng các đối tượng. Mình có thể foreach được
+
+Ngoài các thuộc tsinh của từng đối tượng ra, Controller còn có các thuộc tsinh riêng của nó mà mình có thể khai báo được. 
